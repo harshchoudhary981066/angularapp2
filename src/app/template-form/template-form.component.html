@@ -1,0 +1,46 @@
+<p>template-form works!</p>
+<div class="container">
+<form class="w-50 bg-secondary text-info p-5 m-5" style="border:double;border-radius: 10pt;">
+    <div class="form-group">
+        <label>ID: </label>
+        <input type="text" class="form-control" [(ngModel)] = "customer.id" #id="ngModel" name="id" required minlength="3" maxlength="10">
+        <span *ngIf="id.touched && id.errors?.['required']" class="text-danger">ID is Blank</span>
+        <span *ngIf="id.touched && id.errors?.['minlength']" class="text-danger">ID must be 3 digit</span>
+        <span *ngIf="id.touched && id.errors?.['maxlength']" class="text-danger">ID must be max 10 digit</span>
+
+    </div>
+
+
+    <div class="form-group">
+        <label>Name: </label>
+        <input type="text" class="form-control" [(ngModel)] = "customer.name" #name="ngModel" name="name" required minlength="5" maxlength="10">
+        <span *ngIf="name.touched && name.errors?.['required']" class="text-danger">Name is Blank</span>
+        <span *ngIf="name.touched && name.errors?.['minlength']" class="text-danger">Name must be 5 digit</span>
+        <span *ngIf="name.touched && name.errors?.['maxlength']" class="text-danger">Name must be max 10 digit</span>
+    </div>
+
+
+    <div class="form-group">
+        <label>SSN: </label>
+        <input type="text" class="form-control"  [(ngModel)] = "customer.ssn" #ssn="ngModel" name="ssn" required minlength="4" maxlength="7">
+        <span *ngIf="ssn.touched && ssn.errors?.['required']" class="text-danger">SSN is Blank</span>
+        <span *ngIf="ssn.touched && ssn.errors?.['minlength']" class="text-danger">SSN must be 4 digit</span>
+        <span *ngIf="ssn.touched && ssn.errors?.['maxlength']" class="text-danger">SSN must be max 7 digit</span>
+    </div>
+
+
+    <div class="form-group">
+        <label>Age: </label>
+        <input type="text" class="form-control"  [(ngModel)] = "customer.age" #age="ngModel" name="age" required minlength="1" maxlength="3">
+        <span *ngIf="age.touched && age.errors?.['required']" class="text-danger">Age is Blank</span>
+        <span *ngIf="age.touched && age.errors?.['minlength']" class="text-danger">Age must be 1 digit</span>
+        <span *ngIf="age.touched && age.errors?.['maxlength']" class="text-danger">Age must be max 3 digit</span>
+    </div>
+
+
+    <div class="form-group pt-2">
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-primary" style="margin-left: 2pt;">Cancel</button>
+    </div>
+</form>
+</div>
