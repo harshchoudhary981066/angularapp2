@@ -1,0 +1,54 @@
+<p>calculator works!</p>
+
+<div class="container">
+
+  <form action="">
+
+    <div>
+
+      <label>Enter No1</label>
+
+      
+
+      <input [(ngModel)]="n2" [ngModelOodelOptions]="{standalone: true}">
+
+    </div>
+
+    <div>
+
+      <label>Enter No2</label>
+      <input [(ngModel)]="n1" [ngModelOptions]="{standalone: true}">
+
+    </div>
+
+    <div>
+
+      <button type="button" (click)="addition()">Addition</button>
+
+      <button type="button" (click)="subtraction()">Subtraction</button>
+
+    </div>
+
+    <div>
+
+      <button type="button" (click)="multiplication()">Mulitiplication</button>
+
+      <button type="button" (click)="division()">Division</button>
+
+    </div>
+
+    <div>
+
+      <div>Sum is {{(n1+n2)}}</div>
+
+      <div>Subtraction is {{(n1-n2)}}</div>
+
+      <div>Multiplication is {{(n1*n2)}}</div>
+
+      <div>Dividing is {{(n1/n2)}}</div>
+
+    </div>
+
+  </form>
+
+</div>
