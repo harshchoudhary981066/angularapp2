@@ -23,11 +23,16 @@ import { FormsModule } from '@angular/forms';
 export class TemplateFormComponent {
 
  @Input() customer:Customer;
+ visible:boolean;
 
  constructor(){
-
+  this.visible = false;
   this.customer=new Customer();
 
+ }
+
+ submit(){
+  this.visible = true;
  }
 
 }

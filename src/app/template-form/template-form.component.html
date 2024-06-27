@@ -1,6 +1,6 @@
 <p>template-form works!</p>
 <div class="container">
-<form class="w-50 bg-secondary text-info p-5 m-5" style="border:double;border-radius: 10pt;">
+<form class="w-50 bg-secondary text-info p-5 m-5" style="border:double;border-radius: 10pt;" (ngSubmit)="submit()">
     <div class="form-group">
         <label>ID: </label>
         <input type="text" class="form-control" [(ngModel)] = "customer.id" #id="ngModel" name="id" required minlength="3" maxlength="10">
@@ -43,4 +43,18 @@
         <button type="reset" class="btn btn-primary" style="margin-left: 2pt;">Cancel</button>
     </div>
 </form>
+<div class="w-50 bg-secondary text-dark p-5 m-5" style="border:double; border-radius: 10pt;">
+    <div>
+        ID is {{customer.id}}
+    </div>
+    <div>
+        Name is {{customer.name}}
+    </div>
+    <div>
+        SSN is {{customer.ssn}}
+    </div>
+    <div>
+        Age is {{customer.age}}
+    </div>
+</div>
 </div>
