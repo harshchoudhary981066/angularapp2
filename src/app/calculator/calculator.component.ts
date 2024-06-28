@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 
  templateUrl: './calculator.component.html',
 
- styleUrl: './calculator.component.css'
+ //styleUrl: 
 
 })
 

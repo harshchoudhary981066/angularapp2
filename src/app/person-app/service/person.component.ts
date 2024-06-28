@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { Observable } from 'rxjs';
+import { Person } from '../model/person';
+import { PersonService } from './person.service';
 
 @Component({
 
@@ -14,9 +16,9 @@ import { Observable } from 'rxjs';
 
  imports: [CommonModule, FormsModule],
 
- templateUrl: './person-app.component.html',
+ templateUrl: './person.component.html',
 
- styleUrl: './person-app.component.css'
+ styleUrl: './person.component.css'
 
 })
 
