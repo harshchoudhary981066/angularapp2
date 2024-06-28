@@ -1,0 +1,19 @@
+<p>person works!</p>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of personlist|async">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
