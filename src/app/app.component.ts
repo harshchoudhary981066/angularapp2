@@ -4,11 +4,12 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { PersonAppComponent } from './person-app/service/person.component';
 import { CustomerComponent } from './customer/customer.components';
 import { AddpersonComponent } from './addperson/addperson.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,TemplateFormComponent,RouterLink,PersonAppComponent,CustomerComponent, AddpersonComponent],
+  imports: [RouterOutlet,TemplateFormComponent,RouterLink,PersonAppComponent,CustomerComponent, AddpersonComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,19 +1,19 @@
 export class Person{
 
-    id:number;
-  
-    name:string;
-  
-    salary:number;
-  
-    constructor(){
-  
-      this.id=0;
-  
-      this.name='';
-  
-      this.salary=0;
-  
-    }
-  
+  personId:number;
+
+  personName:string;
+
+  personSalary:number;
+
+  constructor(){
+
+    this.personId=0;
+
+    this.personName='';
+
+    this.personSalary=0;
+
   }
+
+}
