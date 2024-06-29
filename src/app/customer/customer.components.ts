@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 
  templateUrl: './customer.component.html',
 
- styleUrl: ''
+
 
 })
 

@@ -3,6 +3,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CustomerComponent } from './customer/customer.components';
 import { PersonAppComponent } from './person-app/service/person.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { AddpersonComponent } from './addperson/addperson.component';
 
 export const routes: Routes = [
     {
@@ -22,5 +23,8 @@ export const routes: Routes = [
     },
     {
         path: 'template', component: TemplateFormComponent
+    },
+    {
+        path: 'addperson', component: AddpersonComponent
     }
 ];
